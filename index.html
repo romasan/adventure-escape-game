@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+	<head>
+		<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+		<meta name='Language' content='ru' />
+		<meta name='viewport' content='width=device-width' />
+		<script src="jquery.min.js"></script>
+		<!--<script src="themes/jquery.storage.js"></script>-->
+		<!--
+		<script src = "./jBeep.min.js" language="javascript"></script>
+		-->
+		<script src = "./levels.js" language="javascript">/* levels array */</script>
+		<!--<script src="themes/maze.js"></script>-->
+		<link rel='stylesheet' type='text/css' href='main.css' />
+		<title>Game</title>
+		<script>
+			var lang = {
+				gameover : 'GAME OVER',
+				findkey  : 'FIND THE KEY'
+			}
+		</script>
+		<script>
+			jQuery.preloadImages = function () {
+				var images = (typeof arguments[0] == 'object') ? arguments[0] : arguments;
+				for (var i = 0; i < images.length; i++) {
+					jQuery("<img>").attr("src", images[i]);
+				}
+			}
+		</script>
+		<script src="gameengine.js"></script>
+	</head>
+	<body>
+		<div id="startscreen"></div>
+		<div class='hello' id="splash"> Good luck!</div>
+		<div id='screen'>
+			<!--<img width='100%' height='auto' class='imgi' id="mainImage" src='img/forward.jpg'>-->
+		</div>
+		<div id="buttons">
+			<img class='clbut but1 hbutton' id="bleft" src='img/bleft.png' onclick='left()'>
+			<img class='clbut but2 hbutton' id="bright" src='img/bright.png' onclick='right()'>
+			<img class='clbut but hbutton' id="bforward" src='img/bforward.png' onclick='forward()'>
+		</div>
+		
+		<div id="oscreen">
+			<!--<img src="img/frog1.png" id="frog">-->
+			<div id="frog" class="frogdefault"></div>
+			<div id="key"></div>
+		</div>
+		
+		<div id="scores">
+			LEVEL: <div id="levelnum">1</div>
+			SCORE: <div id="score">0</div>
+		</div>
+			
+		<div id="footer">
+			<!--
+			<div id="shotgun"></div>
+			-->
+		</div>
+		<!--
+		<div id="fcashe">
+			<div class="frog1"></div>
+			<div class="frog2"></div>
+			<div class="frog3"></div>
+			<div class="frog4"></div>
+			<div class="frog5"></div>
+			
+			<div class="stop"></div>
+			<div class="right"></div>
+			<div class="left"></div>
+			<div class="free"></div>
+			<div class="rightforward"></div>
+			<div class="leftforward"></div>
+			<div class="forward"></div>
+			<div class="left"></div>
+			<div class="wall"></div>
+			<div class="exit"></div>
+		</div>
+		-->
+	</body>
+</html>

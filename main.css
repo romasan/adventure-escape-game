@@ -1,0 +1,295 @@
+﻿body {
+	width : 100%;
+	height : 100%;
+	margin : 0 0 0 0;
+	padding : 0 0 0 0;
+	overflow : hidden;
+}
+#startpage {
+	background: url('./img/forward.png');
+	background-size: 100%;
+}
+#elname {
+	color: white;
+	text-shadow: 1px 1px 2px black, 0 0 1em black;
+}
+a {
+	color: #191970;
+}
+
+td {
+	font-size: 25pt;
+}
+h1 {
+	font-size: 20pt;
+}
+.mytable {
+	width:100%;
+	Height: 100%;
+	text-align: center;
+}
+.mytable tr td {
+	position: relative;
+	width: 50%;
+	height: 100px;
+}
+.imgi {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	width:100%; 
+	z-index: -100;
+	height: 100%;
+	position:fixed;
+
+}
+.vnutri{
+	width:60%;
+	height: 80%;
+	position: absolute;
+	top: 10%;
+	left:20%;
+	*overflow-y: auto;
+
+}
+.sverhu{
+	position: absolute;
+	width:100%;
+	height: 10%;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+#footer{
+	position: absolute;
+	bottom: 0;
+}
+
+.schet{
+	position: absolute;
+	top:0;
+	right: 0;
+	font-size: 18pt;
+}
+
+	
+.mybut{
+	width: 100%;
+	height: 100px;
+	background-color:rgba(255,255, 255, 0.1);
+	font-size: 12pt;
+	border: 1px outset black;
+	color: white;
+	text-shadow: 1px 1px 2px black, 0 0 1em black;
+	/*Переход*/
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Для Firefox */
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Для Safari и Chrome */
+	box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+ }
+.mybut:hover{
+	position:relative;
+	background-color:rgba(0,0,0, 0.6);
+	color:#fff;
+}
+.but{ 
+	font-size: 15pt;
+	width:25%;
+	position: absolute;
+	bottom: 65px;
+	left: 50%;
+	margin-left: -12.5%;
+}
+.but1{ 
+	width:25%;
+	font-size: 15pt;
+	margin-left: 12.5%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.but2{ 
+	margin-right: 12.5%;	
+	width:25%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.hello{
+	position: absolute;
+	width: 50%;
+	margin-left: 25%;
+	top: 30%;
+	text-align: center;
+	vertical-align: middle;
+	background-color: Moccasin;
+	font-size: 20pt;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Для Firefox */
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Для Safari и Chrome */
+	box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+	z-index:999;
+}
+.hbutton {
+	opacity: 0.3;
+	z-index: 999;
+}
+.hiddenButton {
+	display: none;
+}
+#screen {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-size: 100% 100%;
+	z-index : -1;
+}
+.stop                 { background-image: url("./img/stop.png"); }
+.right               { background-image: url("./img/right.png"); }
+.left                 { background-image: url("./img/left.png"); }
+.free                 { background-image: url("./img/free.png"); }
+.rightforward { background-image: url("./img/rightforward.png"); }
+.leftforward   { background-image: url("./img/leftforward.png"); }
+.forward           { background-image: url("./img/forward.png"); }
+.leftright       { background-image: url("./img/leftright.png"); }
+.wall                 { background-image: url("./img/wall.png"); }
+.exit                 { background-image: url("./img/exit.png"); }
+@media all and (min-width: 320px) {
+	#footer {
+		margin-left: 20px;
+	}
+}
+@media all and (min-width: 320px) {
+	#footer {
+		margin-left: 30px;
+	}
+}
+@media all and (min-width: 360px) {
+	#footer {
+		margin-left: 70px;
+	}
+}
+@media all and (min-width: 480px) {
+	#footer {
+		margin-left: 180px;
+	}
+}
+@media all and (min-width: 960px) {
+	#footer {
+		margin-left: 350px;
+	}
+}
+#scores {
+	display: absolute;
+	background: #000;
+	color: #fff;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 10%;
+	z-index: 666;
+}
+#scores div {
+	display : inline;
+}
+#footer {
+	display: absolute;
+	left: 0px;
+	bottom: 0px;
+}
+#shotgun {
+	background-image: url("./img/shotgun.png");
+	background-position: 0px 0px;
+	background-size: 100%;
+	position: relative;
+	bottom: 0px;
+	width: 288px;
+	height: 210px;
+	z-index:777;  
+}
+.frogdefault {
+	background-position: 0px -525px;
+}
+@media all and (min-width: 320px) {
+	#frog {
+		top : 50px;
+		left : 50px;
+	}
+}
+@media all and (min-width: 360px) {
+	#frog {
+		top: 100px;
+		left: 80px;
+	}
+}
+#frog {
+	display : none;
+	position: relative;
+	z-index: 666;
+}
+#fcashe {
+	display: none;
+}
+.frog1{
+	width : 216px;
+	height : 384px;
+	background-image: url('./img/1.png');
+}
+.frog2{
+	width : 216px;
+	height : 384px;
+	background-image: url('./img/2.png');
+}
+.frog3{
+	width : 216px;
+	height : 384px;
+	background-image: url('./img/3.png');
+}
+.frog4{
+	width : 216px;
+	height : 384px;
+	background-image: url('./img/4.png');
+}
+.frog5{
+	width : 216px;
+	height : 384px;
+	background-image: url('./img/5.png');
+}
+#oscreen {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+//	text-align : center;
+//	vertical-align : middle;
+//	line-height : 100%;
+	padding-left : 30%;
+	padding-top : 25%;
+	
+}
+#splash {
+	display: none;
+}
+#key {
+//	position : absolute;
+//	top : 0px;
+//	left : 0px;
+	width : 40%;
+	height : 40%;
+	background-image: url('./img/key.png');
+	background-size: 100% 100%;
+}
+#startscreen {
+	position : absolute;
+	top : 0px;
+	left : 0px;
+	background-image : url('./img/logo.png');
+	background-size : 90% auto;
+	background-repeat : no-repeat;
+	background-position : center 30%;
+	width : 100%;
+	height : 100%;
+	z-index : 999;
+}
